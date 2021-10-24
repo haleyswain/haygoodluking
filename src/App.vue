@@ -19,7 +19,7 @@ export default {
     height: 8225px;
     background: transparent url(./assets/cloud.png) 0 0px repeat-x;
     left: 0px;
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       background: transparent url(./assets/cloud.png) 50% 0px repeat-x;
       background-size: 300px 200px;
       background-repeat: no-repeat;

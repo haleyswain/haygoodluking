@@ -1,8 +1,9 @@
 <template>
   <div class="container">
+    <div class="cloud1"></div>
     <div id="nav">
       <a @click="navigateToWeekend"><img src="../assets/details.png"></a>
-      <a @click="navigateToWeekend"><img src="../assets/accommodations-nav.png"></a>
+      <a @click="navigateToLodging"><img src="../assets/accommodations-nav.png"></a>
     </div>
     <div class="section1">
       <div class="date"></div>
@@ -11,7 +12,7 @@
     <div class="section2" ref="weekend">
       <Weekend />
     </div>
-    <div class="section3" ref="lodging">
+    <div class="section3" ref="lodging" id ="lodging">
       <Accommodations />
     </div>
   </div>
@@ -35,10 +36,10 @@ export default {
       }
     },
     navigateToLodging() {
-        const el = this.$refs.lodging;
+        const el = document.getElementById("lodging");
         if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({behavior: 'smooth'});
+        el.scrollTop = 0;
       }
     }
   }
@@ -88,6 +89,19 @@ export default {
       width: 50%;
       left: 0%;
       top: 50px;
+  }
+}
+.cloud1 {
+    position: absolute;
+    width: 100%;
+    height: 8225px;
+    background: transparent url(../assets/cloud.png) 0 0px repeat-x;
+    left: 0px;
+    @media (max-width: 600px) {
+      background: transparent url(../assets/cloud.png) 50% 0px repeat-x;
+      background-size: 300px 200px;
+      background-repeat: no-repeat;
+      top: 80px;
   }
 }
 h3 {

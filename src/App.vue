@@ -20,5 +20,9 @@ body {
   text-align: center;
   background-color: #758b9a;
   min-width: fit-content;
+  margin: 0px;
+}
+html {
+  min-width: fit-content;
 }
 </style>

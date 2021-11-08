@@ -49,7 +49,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  width: auto;
+  width: 100%;
   margin: 0px auto;
   position: relative;
   overflow: visible;

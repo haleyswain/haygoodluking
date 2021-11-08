@@ -39,7 +39,7 @@ export default {
         const el = document.getElementById("lodging");
         if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollTop = 0;
+        el.scrollIntoView({behavior: 'smooth'});
       }
     }
   }

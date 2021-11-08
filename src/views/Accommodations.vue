@@ -1,7 +1,8 @@
 <template>
     <div class="accoms-container">
         <div class="header-container">
-            <img src="../assets/accoms.svg">
+        </div>
+        <div class="camping-message">
         </div>
         <div class="accoms-options-container">
             <div class="camper">
@@ -12,11 +13,21 @@
             </div>
             <div class="hotel">
             </div>
+            <div class="grand-lodge" @click="goToGrandLodge()">
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+export default {
+  name: "Accommodations",
+  methods: {
+    goToGrandLodge() {
+      window.open("https://www.mcmenamins.com/grand-lodge", '_blank').focus();
+    }
+  },
+}
 
 </script>
 
@@ -30,9 +41,11 @@
   }
 }
 .header-container {
+  background: transparent url(../assets/camping-header.png) 50% no-repeat;
+  padding: 150px 250px;
+  background-size: 100% 100%;
   @media (max-width: 600px) {
-    height: 180px;
-    padding-right: 5px;
+    padding: 85px 300px;
   }
 }
 .header-container img {
@@ -48,8 +61,7 @@
   padding: 150px 250px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 65% 55%;
-      padding-right: 50px;
+      background-size: 65% 70%;
   }
 }
 .hotel {
@@ -57,8 +69,17 @@
   padding: 150px 250px; 
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 65% 55%;
-      padding-right: 50px;
+      background-size: 65% 80%;
+  }
+}
+.grand-lodge {
+  background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
+  padding: 150px 250px; 
+  cursor: pointer;
+  z-index: 2;
+    @media (max-width: 600px) {
+      width: 170px;
+      background-size: 65% 80%;
   }
 }
 .rv {
@@ -66,8 +87,7 @@
   padding: 150px 250px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 65% 55%;
-      padding-right: 50px;
+      background-size: 65% 80%;
   }
 }
 .tent {
@@ -75,8 +95,7 @@
   padding: 150px 250px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 65% 55%;
-      padding-right: 50px;
+      background-size: 65% 80%;
   }
 }
 .accoms-options-container {
@@ -86,6 +105,17 @@
     justify-content: center;
     @media (max-width: 600px) {
       flex-direction: column;
+  }
+}
+.camping-message {
+    background: transparent url(../assets/camping-message-desktop.png) 50% no-repeat;
+    padding: 140px 530px;
+    @media (max-width: 600px) {
+      background: transparent url(../assets/camping-message.png) 50% no-repeat;
+      padding: 100px 250px;
+      display: flex;
+      align-content: center;
+      background-size: 85%;
   }
 }
 </style>

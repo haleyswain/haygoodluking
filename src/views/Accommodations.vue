@@ -29,11 +29,18 @@
       justify-content: center;
   }
 }
+.header-container {
+  @media (max-width: 600px) {
+    height: 180px;
+    padding-right: 5px;
+  }
+}
 .header-container img {
-    height: 350px;
-    width: 500px;
+    height: 290px;
+    width: 590px;
     @media (max-width: 600px) {
       margin: auto;
+      width: 300px;
   }
 }
 .camper {
@@ -41,19 +48,36 @@
   padding: 150px 250px;
     @media (max-width: 600px) {
       width: 170px;
+      background-size: 65% 55%;
+      padding-right: 50px;
   }
 }
 .hotel {
   background: transparent url(../assets/hotel.png) 50% no-repeat;
   padding: 150px 250px; 
+    @media (max-width: 600px) {
+      width: 170px;
+      background-size: 65% 55%;
+      padding-right: 50px;
+  }
 }
 .rv {
   background: transparent url(../assets/RV.png) 50% no-repeat;
   padding: 150px 250px;
+    @media (max-width: 600px) {
+      width: 170px;
+      background-size: 65% 55%;
+      padding-right: 50px;
+  }
 }
 .tent {
   background: transparent url(../assets/tent.png) 50% no-repeat;
   padding: 150px 250px;
+    @media (max-width: 600px) {
+      width: 170px;
+      background-size: 65% 55%;
+      padding-right: 50px;
+  }
 }
 .accoms-options-container {
     display: flex;

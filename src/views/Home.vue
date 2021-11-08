@@ -12,7 +12,7 @@
     <div class="section2" ref="weekend">
       <Weekend />
     </div>
-    <div class="section3" ref="lodging" id ="lodging">
+    <div class="section3" ref="lodging" id="lodging">
       <Accommodations />
     </div>
   </div>
@@ -49,14 +49,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  width: 100%;
+  width: 100vw;
   margin: 0px auto;
   position: relative;
   overflow: visible;
   z-index: 2;
 }
 .section1 {
-  width: 100%;
+  width: 100vw;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -70,10 +70,12 @@ export default {
   top: 215px;
   right: 15%;
   @media (max-width: 600px) {
+    width: 100vw;
+    background-size: 90% 100%;
     margin: auto;
-    padding: 70px;
-    top: 30px;
-    right: 7%;
+    padding: 0px;
+    top: 85px;
+    left: 0px;
   }
 }
 .location {
@@ -85,10 +87,10 @@ export default {
     @media (max-width: 600px) {
       background: transparent url(../assets/Vernonia-Springs.png) 40% no-repeat;
       margin: auto;
-      height: 60%;
       width: 50%;
       left: 0%;
       top: 50px;
+      height: 40%;
   }
 }
 .cloud1 {

@@ -24,8 +24,11 @@ export default {
 .header {
   background: center transparent url(../assets/details-header.png) no-repeat;
   height: 250px;
-  width: 590px;
+  width: 100vw;
   margin: auto;
+  @media (max-width: 600px) {
+    background-size: 80% 100%;
+  }
 }
 .details-container {
   display: flex;
@@ -36,6 +39,9 @@ export default {
 .details-container img {
   width: 500px;
   margin:auto;
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
 }
 </style>
 

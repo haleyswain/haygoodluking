@@ -75,7 +75,7 @@ export default {
     margin: auto;
     padding: 0px;
     top: 85px;
-    left: 0px;
+    left: 12%;
   }
 }
 .location {
@@ -88,19 +88,19 @@ export default {
       background: transparent url(../assets/Vernonia-Springs.png) 40% no-repeat;
       margin: auto;
       width: 50%;
-      left: 0%;
+      left: 12%;
       top: 50px;
       height: 40%;
   }
 }
 .cloud1 {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 8225px;
     background: transparent url(../assets/cloud.png) 0 0px repeat-x;
     left: 0px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/cloud.png) 50% 0px repeat-x;
+      background: transparent url(../assets/cloud.png) 80% 0px repeat-x;
       background-size: 300px 200px;
       background-repeat: no-repeat;
       top: 80px;
@@ -124,6 +124,7 @@ a {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
+    margin-left: 25%;
   }
 }
 #nav a img {

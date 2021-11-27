@@ -38,6 +38,7 @@ export default {
     align-items: center;
     @media (max-width: 600px) {
       justify-content: center;
+      margin-left: 20%;
   }
 }
 .header-container {
@@ -45,7 +46,7 @@ export default {
   padding: 150px 250px;
   background-size: 100% 100%;
   @media (max-width: 600px) {
-    padding: 85px 300px;
+    padding: 85px 190px;
   }
 }
 .header-container img {
@@ -108,11 +109,11 @@ export default {
   }
 }
 .camping-message {
-    background: transparent url(../assets/camping-message-desktop.png) 50% no-repeat;
+    background: transparent url(../assets/camping-message.png) 50% no-repeat;
     padding: 140px 530px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/camping-message.png) 50% no-repeat;
-      padding: 100px 250px;
+      background: transparent url(../assets/camping-message1.png) 50% no-repeat;
+      padding: 100px 225px;
       display: flex;
       align-content: center;
       background-size: 85%;

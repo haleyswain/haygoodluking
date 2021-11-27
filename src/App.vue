@@ -21,7 +21,7 @@ body {
   background-color: #758b9a;
   min-width: 100vw;
   max-width: 100vw;
-  margin: 0px;
+  margin: 0 auto;
 }
 html {
   min-width: 100vw;

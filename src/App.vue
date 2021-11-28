@@ -19,12 +19,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-color: #758b9a;
-  min-width: 100vw;
-  max-width: 100vw;
+  min-width: fit-content;
+  max-width: 100%;
   margin: 0 auto;
 }
 html {
-  min-width: 100vw;
-  max-width:100vw;
+  min-width: 100%;
+  max-width:100%;
 }
 </style>

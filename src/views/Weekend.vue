@@ -21,15 +21,15 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-right: 15%;
 }
 .header {
-  margin-top: 50px;
   background: center transparent url(../assets/details-header.png) no-repeat;
   height: 250px;
   width: 100vw;
   @media (max-width: 600px) {
-    margin-left: 15%;
     background-size: 80% 100%;
+    margin: auto;
   }
 }
 .details-container {
@@ -48,7 +48,7 @@ export default {
   @media (max-width: 600px) {
       background: transparent url(../assets/ceremony-time.png) 30% no-repeat;
       background-size: 100% 100%;
-      margin-left: 25%;
+      margin: auto;
   }
 }
 .details-reception {
@@ -58,7 +58,7 @@ export default {
     @media (max-width: 600px) {
       background: transparent url(../assets/reception-dinner1.png) 30% no-repeat;
       background-size: 100% 100%;
-      margin-left: 25%;
+      margin: auto;
   }
 }
 .details-registry {

@@ -38,7 +38,7 @@ export default {
     align-items: center;
     @media (max-width: 600px) {
       justify-content: center;
-      margin-left: 20%;
+      margin-right: 15%;
   }
 }
 .header-container {
@@ -116,7 +116,7 @@ export default {
       padding: 100px 225px;
       display: flex;
       align-content: center;
-      background-size: 85%;
+      background-size: 108%;
   }
 }
 </style>

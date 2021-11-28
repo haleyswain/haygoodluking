@@ -49,14 +49,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0px auto;
   position: relative;
   overflow: visible;
   z-index: 2;
 }
 .section1 {
-  width: 100vw;
+  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -70,12 +70,12 @@ export default {
   top: 215px;
   right: 15%;
   @media (max-width: 600px) {
-    width: 100vw;
-    background-size: 90% 100%;
+    width: 100%;
+    background-size: 80% 100%;
     margin: auto;
     padding: 0px;
     top: 85px;
-    left: 12%;
+    right: 0px;
   }
 }
 .location {
@@ -88,22 +88,23 @@ export default {
       background: transparent url(../assets/Vernonia-Springs.png) 40% no-repeat;
       margin: auto;
       width: 50%;
-      left: 12%;
       top: 50px;
       height: 40%;
+      left: -5%;
   }
 }
 .cloud1 {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 8225px;
     background: transparent url(../assets/cloud.png) 0 0px repeat-x;
     left: 0px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/cloud.png) 80% 0px repeat-x;
+      background: transparent url(../assets/cloud.png) 40% 0px repeat-x;
       background-size: 300px 200px;
       background-repeat: no-repeat;
       top: 80px;
+      margin:auto;
   }
 }
 h3 {
@@ -124,7 +125,6 @@ a {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
-    margin-left: 25%;
   }
 }
 #nav a img {

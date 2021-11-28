@@ -71,11 +71,10 @@ export default {
   right: 15%;
   @media (max-width: 600px) {
     width: 100%;
-    background-size: 80% 100%;
+    background-size: 65%;
     margin: auto;
-    padding: 0px;
     top: 85px;
-    right: 0px;
+    left: 60px;
   }
 }
 .location {
@@ -125,6 +124,7 @@ a {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
+    margin-right: 90px;
   }
 }
 #nav a img {

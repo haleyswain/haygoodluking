@@ -28,7 +28,7 @@ export default {
   height: 250px;
   width: 100vw;
   @media (max-width: 600px) {
-    background-size: 80% 100%;
+    background-size: 85%;
     margin: auto;
   }
 }

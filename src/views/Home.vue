@@ -8,6 +8,7 @@
     <div class="section1">
       <div class="date"></div>
       <div class="location"></div>
+      <div class="location-address"></div>
     </div>
     <div class="section2" ref="weekend">
       <Weekend />
@@ -57,10 +58,13 @@ export default {
 }
 .section1 {
   width: 100%;
-  height: 500px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 600px) {
+    height: 750px
+  }
 }
 .date {
   background: transparent url(../assets/date.png) no-repeat;
@@ -75,20 +79,23 @@ export default {
     margin: auto;
     top: 85px;
     left: 60px;
+    height: 75%;
   }
 }
 .location {
-    background: transparent url(../assets/Vernonia-Springs.png) no-repeat;
-    height: 45%;
+    background: transparent url(../assets/vernonia-springs.png) no-repeat;
+    height: 75%;
     width: 50%;
     position: relative;
-    left: 25%;
+    left: 35%;
+    top: -80px;
+    background-size: 50%;
     @media (max-width: 600px) {
-      background: transparent url(../assets/Vernonia-Springs.png) 40% no-repeat;
+      background: transparent url(../assets/vernonia-springs.png) 40% no-repeat;
       margin: auto;
-      width: 50%;
-      top: 50px;
-      height: 40%;
+      width: 68%;
+      top: 20px;
+      height: 703px;
       left: -5%;
   }
 }

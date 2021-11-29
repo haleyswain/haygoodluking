@@ -21,7 +21,10 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-right: 15%;
+  margin-right: none;
+  @media (max-width: 600px) {
+    margin-right: 15%;
+  }
 }
 .header {
   background: center transparent url(../assets/details-header.png) no-repeat;

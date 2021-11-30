@@ -4,6 +4,7 @@
     <div id="nav">
       <a @click="navigateToWeekend"><img src="../assets/details.png"></a>
       <a @click="navigateToLodging"><img src="../assets/accommodations-nav.png"></a>
+      <a @click="navigateToSchedule"><img src="../assets/schedule-nav.png"></a>
     </div>
     <div class="section1">
       <div class="date"></div>
@@ -11,22 +12,27 @@
       <div class="location-address"></div>
     </div>
     <div class="section2" ref="weekend">
-      <Weekend />
+      <Details />
     </div>
     <div class="section3" ref="lodging" id="lodging">
       <Accommodations />
+    </div>
+    <div class="section4" ref="schedule" id="schedule">
+      <Schedule />
     </div>
   </div>
 </template>
 
 <script>
-import Weekend from "./Weekend";
+import Details from "./Details";
 import Accommodations from "./Accommodations";
+import Schedule from "./Schedule";
 export default {
   name: 'Home',
   components: {
-    Weekend,
-    Accommodations
+    Details,
+    Accommodations,
+    Schedule
   },
   methods: {
     navigateToWeekend() {
@@ -38,6 +44,13 @@ export default {
     },
     navigateToLodging() {
         const el = document.getElementById("lodging");
+        if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({behavior: 'smooth'});
+      }
+    },
+    navigateToSchedule() {
+        const el = document.getElementById("schedule");
         if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
         el.scrollIntoView({behavior: 'smooth'});

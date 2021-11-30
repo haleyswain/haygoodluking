@@ -76,7 +76,7 @@ export default {
   flex-direction: column;
   align-items: center;
   @media (max-width: 600px) {
-    height: 750px
+    height: 845px;
   }
 }
 .date {

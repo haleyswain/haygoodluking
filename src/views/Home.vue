@@ -96,7 +96,7 @@ export default {
   }
 }
 .location {
-    background: transparent url(../assets/vernonia-springs.png) no-repeat;
+    background: transparent url(../assets/vernonia-springs1.png) no-repeat;
     height: 75%;
     width: 50%;
     position: relative;
@@ -104,7 +104,7 @@ export default {
     top: -80px;
     background-size: 50%;
     @media (max-width: 600px) {
-      background: transparent url(../assets/vernonia-springs.png) 40% no-repeat;
+      background: transparent url(../assets/vernonia-springs1.png) 40% no-repeat;
       margin: auto;
       width: 68%;
       top: 20px;

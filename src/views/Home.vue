@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <div class="cloud1"></div>
     <div id="nav">
       <a @click="navigateToWeekend"><img src="../assets/details.png"></a>
       <a @click="navigateToLodging"><img src="../assets/accommodations-nav.png"></a>
@@ -8,6 +7,7 @@
     </div>
     <div class="section1">
       <div class="date"></div>
+      <div class="illustration"></div>
       <div class="location"></div>
       <div class="location-address"></div>
     </div>
@@ -63,67 +63,44 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  width: 100%;
-  margin: 0px auto;
-  position: relative;
-  overflow: visible;
-  z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 600px) {
+      justify-content: center;
+  }
 }
 .section1 {
-  width: 100%;
-  height: 650px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   @media (max-width: 600px) {
-    height: 845px;
+    flex-direction: column;
   }
 }
 .date {
-  background: transparent url(../assets/date.png) no-repeat;
-  height: 95%;
-  width: 50%;
-  position: relative;
-  top: 215px;
-  right: 15%;
-  @media (max-width: 600px) {
-    width: 100%;
-    background-size: 65%;
-    margin: auto;
-    top: 85px;
-    left: 60px;
-    height: 75%;
-  }
+  background: transparent url(../assets/date.png) 50% no-repeat;
+  padding: 150px;
+}
+.illustration {
+  background: transparent url(../assets/illustration.png) 50% no-repeat;
+  padding: 110px;
+  background-size: 65%;
 }
 .location {
-    background: transparent url(../assets/vernonia-springs1.png) no-repeat;
-    height: 75%;
-    width: 50%;
-    position: relative;
-    left: 35%;
-    top: -80px;
-    background-size: 50%;
-    @media (max-width: 600px) {
-      background: transparent url(../assets/vernonia-springs1.png) 40% no-repeat;
-      margin: auto;
-      width: 68%;
-      top: 20px;
-      height: 703px;
-      left: -5%;
-  }
+    background: transparent url(../assets/vernonia-springs.png) 50% no-repeat;
+    padding: 170px;
+      @media (max-width: 600px) {
+        background-size: 80%;
+        padding: 175px 250px;
+    }
 }
 .cloud1 {
-    position: absolute;
-    width: 100%;
-    height: 8225px;
-    background: transparent url(../assets/cloud.png) 0 0px repeat-x;
-    left: 0px;
+    height: 100%;
+    background: transparent url(../assets/cloud.png) 50% repeat-x;
+    padding: 100px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/cloud.png) 40% 0px repeat-x;
-      background-size: 300px 200px;
       background-repeat: no-repeat;
-      top: 80px;
-      margin:auto;
   }
 }
 h3 {
@@ -144,7 +121,6 @@ a {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
-    margin-right: 90px;
   }
 }
 #nav a img {

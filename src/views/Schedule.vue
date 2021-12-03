@@ -45,41 +45,43 @@ export default {
   }
 }
 .part1 {
-  background: center transparent url(../assets/part1.png) 50% no-repeat;
-  padding: 90px 190px;
-  background-size: 100% 100%;
+  background: transparent url(../assets/part1.png) 50% no-repeat;
+  padding: 170px 360px;
     @media (max-width: 600px) {
       background: transparent url(../assets/part1.png) 50% no-repeat;
-      background-size: 70%;
+      background-size: 330px 200px;
       margin: auto;
+      padding: 120px;
   }
 }
 .part2 {
   background: transparent url(../assets/part2.png) 50% no-repeat;
-  padding: 90px 190px;
+  padding: 170px 360px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 70%;
+      background-size: 330px 200px;
       margin: auto;
+      padding: 120px;
   }
 }
 .part3 {
   background: transparent url(../assets/part3.png) 50% no-repeat;
-  padding: 90px 190px;
+  padding: 170px 360px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 70%;
+      background-size: 330px 200px;
       margin: auto;
+      padding: 120px;
   }
 }
 .part4 {
   background: transparent url(../assets/part4.png) 50% no-repeat;
-  padding: 90px 190px;
+  padding: 170px 360px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 70%;
+      background-size: 330px 200px;
       margin: auto;
-      margin-bottom: 100px;
+      padding: 120px;
   }
 }
 </style>

@@ -20,5 +20,11 @@ body {
   text-align: center;
   background-color: #758b9a;
   min-width: 100vw;
+  max-width: 100vw;
+  position: absolute;
+}
+html {
+  min-width: 100%;
+  max-width:100%;
 }
 </style>

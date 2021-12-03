@@ -45,35 +45,41 @@ export default {
   }
 }
 .part1 {
-  background: transparent url(../assets/schedule-part1.png) 50% no-repeat;
-  padding: 170px 360px;
+  background: center transparent url(../assets/part1.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 80%;
+      background: transparent url(../assets/part1.png) 50% no-repeat;
+      background-size: 70%;
+      margin: auto;
   }
 }
 .part2 {
-  background: transparent url(../assets/schedule-part2.png) 50% no-repeat;
-  padding: 170px 360px;
+  background: transparent url(../assets/part2.png) 50% no-repeat;
+  padding: 90px 190px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 80%;
+      background-size: 70%;
+      margin: auto;
   }
 }
 .part3 {
-  background: transparent url(../assets/schedule-part3.png) 50% no-repeat;
-  padding: 170px 370px;
+  background: transparent url(../assets/part3.png) 50% no-repeat;
+  padding: 90px 190px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 80%;
+      background-size: 70%;
+      margin: auto;
   }
 }
 .part4 {
-  background: transparent url(../assets/schedule-part4.png) 50% no-repeat;
-  padding: 170px 370px;
+  background: transparent url(../assets/part4.png) 50% no-repeat;
+  padding: 90px 190px;
     @media (max-width: 600px) {
       width: 170px;
-      background-size: 80%;
+      background-size: 70%;
+      margin: auto;
+      margin-bottom: 100px;
   }
 }
 </style>

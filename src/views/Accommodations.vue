@@ -48,54 +48,64 @@ export default {
     padding: 85px 190px;
   }
 }
-.header-container img {
-    height: 290px;
-    width: 590px;
-    @media (max-width: 600px) {
-      margin: auto;
-      width: 300px;
-  }
-}
+
+// .camper {
+//   background: transparent url(../assets/camper.png) 50% no-repeat;
+//   padding: 150px 250px;
+//     @media (max-width: 600px) {
+//       width: 170px;
+//       background-size: 65% 70%;
+//   }
+// }
 .camper {
-  background: transparent url(../assets/camper.png) 50% no-repeat;
-  padding: 150px 250px;
+  background: center transparent url(../assets/camper.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 65% 70%;
+      background: transparent url(../assets/camper.png) 50% no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
   }
 }
 .hotel {
-  background: transparent url(../assets/hotel.png) 50% no-repeat;
-  padding: 150px 250px; 
+  background: center transparent url(../assets/hotel.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 65% 80%;
+      background: transparent url(../assets/hotel.png) 50% no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
   }
 }
 .grand-lodge {
-  background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
-  padding: 150px 250px; 
-  cursor: pointer;
+  background: center transparent url(../assets/grand-lodge.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
   z-index: 2;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 65% 80%;
+      background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
   }
 }
 .rv {
-  background: transparent url(../assets/RV.png) 50% no-repeat;
-  padding: 150px 250px;
+  background: center transparent url(../assets/RV.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 65% 80%;
+      background: transparent url(../assets/RV.png) 50% no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
   }
 }
 .tent {
-  background: transparent url(../assets/tent.png) 50% no-repeat;
-  padding: 150px 250px;
+  background: center transparent url(../assets/tent.png) 50% no-repeat;
+  padding: 90px 190px;
+  background-size: 100% 100%;
     @media (max-width: 600px) {
-      width: 170px;
-      background-size: 65% 80%;
+      background: transparent url(../assets/tent.png) 50% no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
   }
 }
 .accoms-options-container {
@@ -112,10 +122,10 @@ export default {
     padding: 140px 530px;
     @media (max-width: 600px) {
       background: transparent url(../assets/camping-message1.png) 50% no-repeat;
-      padding: 100px 225px;
+      background-size: 73%;
       display: flex;
       align-content: center;
-      background-size: 108%;
+      padding: 105px 246px;
   }
 }
 </style>

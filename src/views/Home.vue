@@ -67,8 +67,8 @@ export default {
     flex-direction: column;
     align-items: center;
     @media (max-width: 600px) {
-      justify-content: center;
-      width: 100vw;
+      max-width: 100vw;
+      min-width: 100vw;
   }
 }
 .section1 {
@@ -122,10 +122,12 @@ a {
   @media (max-width: 600px) {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 25px;
   }
 }
 #nav a img {
-  height: 100px;
+  height: 60px;
   top: 50px;
   position: relative;
 }
@@ -136,7 +138,7 @@ a {
 }
 
 #nav a.router-link-exact-active {
-  width: 100px;
+  width: 70px;
   height: 50px;
 }
 </style>

@@ -68,11 +68,11 @@ export default {
   }
 }
 .rv {
-  background: transparent url(../assets/RV.png) 50% no-repeat;
+  background: transparent url(../assets/camper.png) 50% no-repeat;
   padding: 150px 250px;
   background-size: 100% 100%;
     @media (max-width: 600px) {
-      background: transparent url(../assets/RV.png) 50% no-repeat;
+      background: transparent url(../assets/camper.png) 50% no-repeat;
       background-size: 330px 200px;
       margin: auto;
       margin-left: 40px;

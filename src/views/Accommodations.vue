@@ -9,7 +9,7 @@
             </div>
             <div class="tent">
             </div>
-            <div class="hotel">
+            <div class="hotel" @click="goToHotel()">
             </div>
             <div class="grand-lodge" @click="goToGrandLodge()">
             </div>
@@ -23,6 +23,9 @@ export default {
   methods: {
     goToGrandLodge() {
       window.open("https://www.mcmenamins.com/grand-lodge", '_blank').focus();
+    },
+    goToHotel() {
+      window.open("https://www.ihg.com/staybridge/hotels/us/en/hillsboro/pdxhn/hoteldetail", '_blank').focus();
     }
   },
 }
@@ -50,6 +53,7 @@ export default {
   background: transparent url(../assets/hotel.png) 50% no-repeat;
   padding: 150px 250px;
   background-size: 100% 100%;
+  cursor: pointer;
     @media (max-width: 600px) {
       background: transparent url(../assets/hotel.png) 50% no-repeat;
       background-size: 330px 200px;
@@ -60,7 +64,7 @@ export default {
   background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
   padding: 150px 250px;
   background-size: 100% 100%;
-  z-index: 2;
+  cursor: pointer;
     @media (max-width: 600px) {
       background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
       background-size: 330px 200px;

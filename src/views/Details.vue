@@ -5,7 +5,7 @@
     <div class="details-container">
       <div class="details-ceremony-time" />
       <div class="details-reception" />
-      <div class="details-registry" />
+      <div class="details-registry" @click="navigateToRegistry()" />
     </div>
   </div>
 </template>
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: 'Details',
+  methods: {
+    navigateToRegistry() {
+      window.open("https://www.honeyfund.com/wedding/swain-philips-07-16-2022", '_blank').focus();
+    }
+  }
 }
 </script>
 
@@ -68,6 +73,7 @@ export default {
   background: center transparent url(../assets/gift.png) no-repeat;
   background-size: 100% 100%;
   padding: 90px 190px;
+  cursor: pointer;
     @media (max-width: 600px) {
       background: transparent url(../assets/gift.png) 30% no-repeat;
       background-size: 100% 100%;

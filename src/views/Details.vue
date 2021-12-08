@@ -80,5 +80,8 @@ export default {
       margin: auto;
   }
 }
+.details-registry:hover {
+  border: 5px solid #E09F3E;
+}
 </style>
 

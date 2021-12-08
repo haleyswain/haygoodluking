@@ -60,6 +60,9 @@ export default {
       margin: auto;
   }
 }
+.hotel:hover {
+  border: 5px solid #E09F3E;
+}
 .grand-lodge {
   background: transparent url(../assets/grand-lodge.png) 50% no-repeat;
   padding: 150px 250px;
@@ -70,6 +73,9 @@ export default {
       background-size: 330px 200px;
       margin: auto;
   }
+}
+.grand-lodge:hover {
+  border: 5px solid #E09F3E;
 }
 .rv {
   background: transparent url(../assets/camper.png) 50% no-repeat;

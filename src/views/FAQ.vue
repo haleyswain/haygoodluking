@@ -39,7 +39,7 @@ export default {
   background: transparent url(../assets/FAQ1.png) 50% no-repeat;
   padding: 170px 360px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/part1.png) 50% no-repeat;
+      background: transparent url(../assets/FAQ1.png) 50% no-repeat;
       background-size: 330px 200px;
       margin: auto;
       padding: 120px;

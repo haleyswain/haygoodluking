@@ -108,10 +108,10 @@ export default {
   }
 }
 .camping-message {
-    background: transparent url(../assets/camping-message.png) 50% no-repeat;
-    padding: 140px 530px;
+    background: transparent url(../assets/camping-message-3.png) 50% no-repeat;
+    padding: 160px 530px;
     @media (max-width: 600px) {
-      background: transparent url(../assets/camping-message1.png) 50% no-repeat;
+      background: transparent url(../assets/camping-message-3.png) 50% no-repeat;
       background-size: 73%;
       display: flex;
       align-content: center;

@@ -4,6 +4,7 @@
       <a @click="navigateToWeekend"><img src="../assets/details.png"></a>
       <a @click="navigateToLodging"><img src="../assets/accommodations-nav.png"></a>
       <a @click="navigateToSchedule"><img src="../assets/schedule-nav.png"></a>
+      <a @click="navigateToFAQ"><img src="../assets/FAQ.png"></a>
     </div>
     <div class="section1">
       <div class="date"></div>
@@ -20,6 +21,9 @@
     <div class="section4" ref="schedule" id="schedule">
       <Schedule />
     </div>
+    <div class="section5" ref="FAQ" id="FAQ">
+      <FAQ />
+    </div>
   </div>
 </template>
 
@@ -27,12 +31,14 @@
 import Details from "./Details";
 import Accommodations from "./Accommodations";
 import Schedule from "./Schedule";
+import FAQ from "./FAQ";
 export default {
   name: 'Home',
   components: {
     Details,
     Accommodations,
-    Schedule
+    Schedule,
+    FAQ
   },
   methods: {
     navigateToWeekend() {
@@ -51,6 +57,13 @@ export default {
     },
     navigateToSchedule() {
         const el = document.getElementById("schedule");
+        if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({behavior: 'smooth'});
+      }
+    },
+    navigateToFAQ() {
+        const el = document.getElementById("FAQ");
         if (el) {
         // Use el.scrollIntoView() to instantly scroll to the element
         el.scrollIntoView({behavior: 'smooth'});

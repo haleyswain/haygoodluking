@@ -42,7 +42,7 @@ export default {
       background: transparent url(../assets/FAQ1.png) 50% no-repeat;
       background-size: 330px 200px;
       margin: auto;
-      padding: 120px;
+      padding: 90px;
   }
 }
 .FAQ2 {
@@ -52,17 +52,17 @@ export default {
       width: 170px;
       background-size: 330px 200px;
       margin: auto;
-      padding: 120px;
+      padding: 90px;
   }
 }
 .FAQ3 {
   background: transparent url(../assets/FAQ3.png) 50% no-repeat;
-  padding: 170px 360px;
+  padding: 150px 360px;
     @media (max-width: 600px) {
       width: 170px;
       background-size: 330px 200px;
       margin: auto;
-      padding: 120px;
+      padding: 90px;
   }
 }
 .FAQ4 {
@@ -72,7 +72,7 @@ export default {
       width: 170px;
       background-size: 330px 200px;
       margin: auto;
-      padding: 120px;
+      padding: 90px;
   }
 }
 </style>

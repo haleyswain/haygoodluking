@@ -4,7 +4,7 @@
       <a @click="navigateToWeekend"><img src="../assets/details.png"></a>
       <a @click="navigateToLodging"><img src="../assets/accommodations-nav.png"></a>
       <a @click="navigateToSchedule"><img src="../assets/schedule-nav.png"></a>
-      <a @click="navigateToFAQ"><img src="../assets/FAQ.png"></a>
+      <a @click="navigateToFAQ"><img class="faq" src="../assets/FAQ-nav.png"></a>
     </div>
     <div class="section1">
       <div class="date"></div>
@@ -143,6 +143,12 @@ a {
   height: 60px;
   top: 50px;
   position: relative;
+}
+.faq {
+  right: 30px;
+  @media (max-width: 600px) {
+    right: 0px;
+  }
 }
 
 #nav a {

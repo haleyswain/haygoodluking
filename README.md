@@ -1,4 +1,5 @@
 # wedding-website
+To check it out, go to www.haygoodluking.com :)
 
 ## Project setup
 ```
